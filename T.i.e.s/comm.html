@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Updates</title>
+    <style>
+        /* Reset some default styles for consistency */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Apply CSS styles to various components */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+            a:link {
+        color: rgb(236, 244, 236); 
+        background-color: transparent; 
+        text-decoration: none;
+        }
+
+        a:visited {
+        color: rgb(247, 245, 246);
+        background-color: transparent;
+        text-decoration: none;
+        }
+
+        a:hover {
+        color: rgb(241, 235, 235);
+        background-color: transparent;
+        text-decoration: underline;
+        }
+
+        a:active {
+        color: rgb(252, 252, 246);
+        background-color: transparent;
+        text-decoration: underline;
+        }
+        .header {
+            background-color: #0a0b0b;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        /* Dashboard styles */
+        .dashboard {
+            position: fixed;
+            left: -240px; /* Initially hidden */
+            top: 0;
+            bottom: 0;
+            width: 240px;
+            background-color: #333;
+            color: #fff;
+            padding: 20px 10px;
+            transition: left 0.3s ease-in-out;
+        }
+
+        .dashboard.opened {
+            left: 0;
+        }
+
+        .menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .menu-item {
+            margin-bottom: 10px;
+        }
+
+        /* Add some hover effect for menu items */
+        .menu-item:hover {
+            background-color: #555;
+        }
+
+        /* Close button */
+        .close-button {
+            text-align: right;
+            cursor: pointer;
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        /* Community Update styles */
+        .update {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .update-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .update-content {
+            margin-top: 10px;
+        }
+
+        .update-meta {
+            font-size: 14px;
+            color: #777;
+            margin-top: 10px;
+        }
+
+        /* Pagination styles */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .page-link {
+            margin: 0 5px;
+            padding: 5px 10px;
+            border: 1px solid #007bff;
+            color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: transparent;
+            transition: background-color 0.3s;
+        }
+
+        /* Style for active page */
+        .page-link.active {
+            background-color: #007bff;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Dashboard Toggle Icon -->
+    <div class="menu-icon" onclick="toggleDashboard()">☰</div>
+
+    <!-- Left Dashboard -->
+    <div class="dashboard">
+        <div class="close-button" onclick="toggleDashboard()">✕</div>
+        <ul class="menu">
+            <li class="menu-item"><a href="pages.html">Home</a></li>
+            <li class="menu-item"><a href="explore.html">Explore</a></li>
+            <li class="menu-item"><a href="favor.html">Favorites</a></li>
+            <li class="menu-item">Community Updates</li>
+            <li class="menu-item"><a href="notification.html">Notifications</a></li>
+        </ul>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Community Updates</h1>
+    </div>
+
+    <!-- Content Container -->
+    <div class="container">
+        <!-- Update 1 -->
+        <div class="update">
+            <div class="update-title">Latest Community Event</div>
+            <div class="update-content">
+                <p>Cricket tournament between OP Jindal and BML Munjal University</p>
+            </div>
+            <div class="update-meta">Posted by John Doe on September 10, 2023</div>
+        </div>
+
+        <!-- New Community Update (Professional-Looking) -->
+        <div class="update">
+            <div class="update-title">Professional Update</div>
+            <div class="update-content">
+                <p>India won Against Pakistan in Asia Cup</p>
+            </div>
+            <div class="update-meta">Posted by Jane Smith on September 15, 2023</div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <a href="#" class="page-link">1</a>
+            <a href="#" class="page-link active">2</a>
+            <a href="#" class="page-link">3</a>
+            <!-- Add more pages as needed -->
+        </div>
+    </div>
+
+    <!-- JavaScript to toggle the dashboard -->
+    <script>
+        function toggleDashboard() {
+            const dashboard = document.querySelector('.dashboard');
+            dashboard.classList.toggle('opened');
+        }
+    </script>
+</body>
+</html>

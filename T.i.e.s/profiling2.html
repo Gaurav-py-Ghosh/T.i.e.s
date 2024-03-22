@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Setup</title>
+    <style>
+        /* Reset some default browser styles */
+        body, h1, h2, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Set a background color for the entire page */
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        /* Page container styles */
+        .container {
+            max-width: 1000px; /* Adjust the width as needed */
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Top Part Styles */
+        .top-part {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+        }
+
+        /* Left Side of Top Part */
+        .top-left {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        /* Profile Icon Styles */
+        .profile-icon {
+           max-height: 130px;
+
+        }
+
+        /* Middle Part Styles */
+        .middle-part {
+            font-size: 25px;
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 100px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        /* Left Side of Middle Part */
+        .middle-left {
+            margin-top: 134px ;
+            flex: 1;
+        }
+
+        /* Right Side of Middle Part */
+        .middle-right {
+            
+            flex: 1;
+            text-align: right;
+           
+        }
+
+        /* Form Field Styles */
+        .form-field {
+            margin-bottom: 10px;
+        }
+
+        /* Skip Button Styles */
+        .skip-button {
+            background-color: #ff5722;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            
+        }
+
+        .skip-button:hover {
+            background-color: #e64a19;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Top Part -->
+        <header class="top-part">
+            <div class="top-left">
+                <p>Finish setting up your profile</p>
+            </div>
+            <div class="top-right">
+                <div class="profile-icon">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4HmCwWpbqUNt4lrk7OIm0QtJM4Lu5woiYKtosVrmsYg&s" >
+
+                
+                </div>
+            </div>
+        </header>
+
+        <!-- Middle Part -->
+        <section class="middle-part">
+            <div class="middle-left">
+                <div class="form-field">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name">
+                    
+                </div>
+                <div class="form-field">
+                    <label for="city">City:</label>
+                    <input type="text" id="city">
+                </div>
+                <div class="form-field">
+                    <label for="nationality">Nationality:</label>
+                    <input type="text" id="nationality">
+                </div>
+                <div class="form-field">
+                    <label for="university">University:</label>
+                    <input type="text" id="university">
+                </div>
+                <div class="form-field">
+                    <label for="interests">Interests:</label>
+                    <input type="text" id="interests">
+                </div>
+            </div>
+            <div class="middle-right">
+              
+                 <a href="pages.html">SKIP</a> 
+
+                <br>
+                <br><br><br><br>
+                <div class="form-field">
+                    <label for="dob">DOB:</label>
+                    <input type="text" id="dob">
+                </div>
+                <div class="form-field">
+                    <label for="gender">Gender:</label>
+                    <input type="text" id="gender">
+                </div>
+                <div class="form-field">
+                    <label for="phno">Ph No:</label>
+                    <input type="text" id="phno">
+                </div>
+                <div class="form-field">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address">
+                    <br><br>
+                <div class="form-field">
+                    <a href="pages.html">SUBMIT</a>
+                </div>>
+                
+
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

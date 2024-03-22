@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        /* Reset some default browser styles */
+        body, h1, h2, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Set a background color for the entire page */
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        /* Container styles */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Top Part Styles */
+        .top-part {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #060606;
+            color: white;
+            padding: 10px;
+        }
+
+        .top-part img {
+            max-height: 40px;
+        }
+
+        /* Log into your account Text Styles */
+        .top-part p {
+            font-weight: bold;
+        }
+
+        /* Middle Part Styles */
+        .middle-part {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Log in Styles */
+        .middle-part h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Input Fields Styles */
+        .middle-part input[type="text"],
+        .middle-part input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        /* Log In Button Styles */
+        #loginButton {
+            background-color: #ff5722;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #loginButton:hover {
+            background-color: #e64a19;
+        }
+
+        /* Social Buttons Styles */
+        .social-buttons button {
+            background-color: #090a0b;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .social-buttons button:last-child {
+            margin-right: 0;
+        }
+
+        /* Bottom Part Styles */
+        .bottom {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Contact and Follow Styles */
+        .bottom p {
+            font-size: 16px;
+        }
+
+        /* Social Media Icons Styles */
+        .bottom a img {
+            max-height: 20px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Top Part -->
+        <header class="top-part">
+            <img src="ties main photo.jpg" >
+            <p>Log into your account</p>
+        </header>
+
+        <!-- Middle Part -->
+        <section class="middle-part">
+            <div class="top">
+                <h2><center>Log in</center></h2>
+            </div>
+            <div class="middle">
+                <input type="text" id="emailOrPhone" placeholder="Phone Number or Email">
+                <input type="password" id="password" placeholder="Password">
+                <CENTER><a href="pages.html">LOG IN</a></CENTER>>
+                <p style="color:red;">OR LOG IN USING</p>
+
+                <br>
+                <div class="social-buttons">
+                    <button id="googleButton">Google</button>
+                    <button id="facebookButton">Facebook</button>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="left">
+                    <p>Follow us:</p>
+                    <a href="https://x.com/T_I_E_S_14?t=XJT8IP939wpKJdQuLQXlow&s=09"><img src="https://static.dezeen.com/uploads/2023/07/x-logo-twitter-elon-musk_dezeen_2364_col_0-1-600x600.jpg" alt="Twitter"></a>
+                    <a href="https://www.instagram.com/t_i_e_s.14/"><img src="https://cdn.pixabay.com/photo/2016/08/09/17/52/instagram-1581266_640.jpg" alt="Instagram"></a>
+                </div>
+                <div class="right">
+                    <p>Contact us:</p>
+                    <p>forexample@bmu.com</p>
+                    
+            
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
